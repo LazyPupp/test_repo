@@ -90,3 +90,42 @@ function daysOfTheMonth(month){
 	}	
 	return days;
 }
+
+function RockPaperScissors(userChoice){
+    var computer = 1 + Math.floor((Math.random()*3));
+
+    let rock = 1;
+    let paper = 2;
+    let scissors = 3;
+    
+    console.log(userChoice, computer);
+
+  	if(userChoice === computer){
+  		return "Yall tied";
+  	}
+  	else if(userChoice === rock){
+  		if(computer === paper){
+  			return "you've lost";
+  		}
+  		else{
+  			return "you've won";
+  	}
+  	}
+  	else if(userChoice === paper) {
+  		if(computer === scissors){
+  		return "You've lost";
+  	}
+  		else{
+  			return "You've won";
+  		}
+ 
+  	}
+  	else if(userChoice === scissors){
+  		if(computer === rock){
+  			return "you've lost";
+  		}
+  		else {
+  			return "you've won";
+  		}
+  	}
+}
