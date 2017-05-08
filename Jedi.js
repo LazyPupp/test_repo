@@ -104,28 +104,31 @@ function RockPaperScissors(userChoice){
   		return "Yall tied";
   	}
   	else if(userChoice === rock){
-  		if(computer === paper){
-  			return "you've lost";
-  		}
-  		else{
-  			return "you've won";
-  	}
+  		return (computer === paper) ? "you've lost" : "you've won";
+  	// 	if(computer === paper){
+  	// 		return "you've lost";
+  	// 	}
+  	// 	else{
+  	// 		return "you've won";
+  	// }
   	}
   	else if(userChoice === paper) {
-  		if(computer === scissors){
-  		return "You've lost";
-  	}
-  		else{
-  			return "You've won";
-  		}
+  		return(computer === scissors) ? "You've lost" : "You've won";
+  	// 	if(computer === scissors){
+  	// 	return "You've lost";
+  	// }
+  	// 	else{
+  	// 		return "You've won";
+  	// 	}
  
   	}
   	else if(userChoice === scissors){
-  		if(computer === rock){
-  			return "you've lost";
-  		}
-  		else {
-  			return "you've won";
-  		}
-  	}
+  		return(computer === rock) ? "You've lost" : "You've won";
+  	// 	if(computer === rock){
+  	// 		return "you've lost";
+  	// 	}
+  	// 	else {
+  	// 		return "you've won";
+  	// 	}
+  	// }
 }
