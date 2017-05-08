@@ -45,3 +45,48 @@ function decode(word){
 	}
   return letter;
 }
+
+function daysOfTheMonth(month){
+
+	let days;
+
+	switch(month){
+		case 'january':
+			days = "january has 31 days";
+			break;
+		case 'february':
+			days = "february has 28 days";
+			break;
+		case 'march':
+			days = "march has 31 days";
+			break;
+		case 'april':
+			days = "april has 30 days";
+			break;
+		case 'may':
+			days = "may has 31 days";
+			break;
+		case 'june':
+			days = "june has 30 days";
+			break;
+		case 'july':
+			days = "july has 31 days";
+			break;
+		case 'august':
+			days = "august has 31 days";
+			break;
+		case 'september':
+			days = "september has 30 days";
+			break;
+		case 'october':
+			days = "october has 31 days";
+			break;
+		case 'november':
+			days = "november has 30 days";
+			break;
+		case 'december':
+			days = " december has 31 days";
+
+	}	
+	return days;
+}
