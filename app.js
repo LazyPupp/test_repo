@@ -1,7 +1,7 @@
 // const myTeam = "Tanner Kyle";
 // console.log(myTeam);
 // console.log("hi");
-function whoAmI(){
-	console.log("Hi, my name is Chris and I'm 29 years old");
+function whoAmI(name="Chris", age=29){
+	console.log(`Hi, my name is ${name} and I'm ${age} years old`);
 }
 whoAmI();
