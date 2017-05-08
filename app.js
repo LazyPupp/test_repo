@@ -2,8 +2,17 @@
 // console.log(myTeam);
 // console.log("hi");
 
-function yearOfBirth(age =29){
+function yearOfBirth(age =29){	
+	try{
+		if(age<0){
+			throw new Error("Age can not be negative");
+		}
+	}catch(e){
+		console.log(e);
+		
+	}
 	return 2017-age;
+
 }
 function whoAmI(name="Chris", age=29){
 	const yob = yearOfBirth(age);
