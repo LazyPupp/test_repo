@@ -8,8 +8,8 @@ function yearOfBirth(age =29){
 			throw new Error("Age can not be negative");
 		}
 	}catch(e){
-		console.log(e);
-		
+		console.error(e);
+
 	}
 	return 2017-age;
 
