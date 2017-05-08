@@ -21,3 +21,27 @@ function beyond(num){
 		console.log("Staying home...")
 	}
 }
+
+
+
+function decode(word){
+  let letter;
+  
+	switch(word.substring(0, 1)){
+		case 'a': 
+			letter = word.substring(1, 2);
+			break;
+		case 'b':
+			letter = word.substring(2, 3);
+			break;
+		case 'c':
+			letter = word.substring(3, 4);
+			break;
+		case 'd':
+			letter = word.substring(4, 5);
+			break;
+		default:
+			letter = ' ';
+	}
+  return letter;
+}
